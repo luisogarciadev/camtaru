@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+    Colors
+{% endblock %}
+{% block body %}
+    {% if route_colors %}
+        <ul>
+            {% for routes in route_colors %}
+                routes
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay rutas que desplegar.</p>
+    {% endif %}
+{% endblock %}
